@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="flex flex-row w-full justify-between px-[100px] py-[20px]">
+    <nav class="flex flex-row w-full justify-between items-center px-6 px-[100px] py-[20px]">
         <div class="flex flex-row gap-[100px] items-center">
             <img src="/asset/Logo.png" alt="">
             <ul class="flex flex-row gap-[30px] font-medium text-[14px] text-black">
@@ -19,22 +19,48 @@
                 <li><a href="">FAQ</a></li>
             </ul>
         </div>
-        <button class="bg-[#1B59E0] px-[15px] py-[10px] font-semibold text-[14px] text-white rounded-[5px]">
-            DAFTAR
-        </button>
+        <div class="flex items-center gap-4">
+            <button class="bg-[#1B59E0] px-[15px] py-[10px] font-semibold text-[14px] text-white rounded-[5px]">
+                DAFTAR
+            </button>
+
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <label for="menu-toggle"
+                class="lg-hidden flex flex-col justify-center items-center w-8 h-5 gap-1.5 cursor-pointer">
+                <span
+                    class="block h-7 w-0.5 bg-black transition-all  duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"></span>
+                <span class="block h-7 w-0.5 bg-black transition-all  duration-300 peer-checked:opacity-0"></span>
+                <span
+                    class="block h-7 w-0.5 bg-black transition-all  duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"></span>
+            </label>
+
+            <div
+                class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white border-t border-gray-100 flex-col items-center py-8 gap-6 shadow-xl lg:hidden animate-in-from-top duration-300">
+                <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Program</a>
+                <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Kurikulum</a>
+                <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Testimonial</a>
+                <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">FAQ</a>
+
+                <button class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[8  px]">
+                    DAFTAR
+                </button>
+
+            </div>
+        </div>
     </nav>
-    <main class="flex flex-row justify-between pl-[100px]">
-        <div class="h-fit gap-[60px] flex flex-col">
+    <main class="flex flex-col md:flex-row justify-between items-center px-6 md:pl-[100px] py-10 md:py-0 gap-[45px]">
+        <div class="w-full h-fit gap-[40px] md:gap-[60px] flex flex-col text-center md:text-left">
             <div>
-                <h1 class="font-bold text-[50px]">
+                <h1 class="font-bold text-3x1 md:text-[50px]">
                     Sekolah IT Berbasis Qur’an untuk Masa Depan Digital
                 </h1>
-                <p class="text-[20px]">
+                <p class="text-base md:text-[20px]">
                     Belajar coding dari nol sampai siap kerja, dengan lingkungan Islami
                     dan pembinaan karakter
                 </p>
             </div>
-            <div class="grid grid-cols-2 row-span-1 gap-[20px]">
+            <div class="grid grid-cols-2 row-span-1 gap-[20px]max-w-sm mx-auto md:mx-0">
                 <div class="flex flex-row gap-[10px] font-medium text-[18px]">
                     <img src="/asset/check.png" alt="">
                     <p>Project-based</p>
@@ -53,50 +79,56 @@
                 </div>
             </div>
 
-            <div class="flex flex-row gap-[150px] w-full">
-                <p class="font-medium text-[20px]">
+            <div
+                class="flex flex-col sm:flex-row gap-6 md:gap-[150px] w-full bg-white px-[25px] py-[25px] justify-between items-center rounded-[15px]">
+                <p class="font-medium text-lg md:text-[20px]">
                     Pendaftaran Gelombang 1 Dibuka!
                 </p>
                 <p class="font-medium text-[13px]">
                     Berakhir sampai: 12 November 2025
                 </p>
             </div>
-            <button class="bg-[#1B59DF] px-[10px] py-[10px] rounded-[10px] text-[15px] font-semibold text-white">
+            <button
+                class="bg-[#1B59DF] w-full sm:w-auto px-[10px] py-[10px] rounded-[10px] text-[15px] font-semibold text-white">
                 Daftar Sekarang
             </button>
         </div>
-        <img src="/asset/image.png" alt="">
+        <img src="/asset/image.png" alt="" class="w-full max-w-md md:max-w-none md:w-auto">
     </main>
-    <section class="flex flex-col px-[100px] py-[50px] gap-[30px] items-center">
+    <section class="flex flex-col px-6 md:px-[100px] py-12 md:py-[50px] gap-10 md:gap-[50px] items-center">
         <h1 class="text-[50px] font-semibold">Dipercaya Banyak Siswa dan Orang Tua</h1>
-        <div class="flex flex-row gap-[30px]">
-            <div class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-[30px]">
+            <div
+                class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
                 <img src="/asset/Frame.png" alt="" class="w-[80px]">
-                <p class="text-[18px] font-medium">
+                <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
                     Ratusan siswa aktif belajar
                 </p>
             </div>
-            <div class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
+            <div
+                class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
                 <img src="/asset/Frame.png" alt="" class="w-[80px]">
-                <p class="text-[18px] font-medium">
+                <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
                     Ratusan siswa aktif belajar
                 </p>
             </div>
-            <div class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
+            <div
+                class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center shadow-md rounded-[15px]">
                 <img src="/asset/Frame.png" alt="" class="w-[80px]">
-                <p class="text-[18px] font-medium">
+                <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
                     Ratusan siswa aktif belajar
                 </p>
             </div>
         </div>
     </section>
-    <section class="bg-[#EBF0FA] flex flex-col items-center gap-[50px] px-[100px] py-[50px]">
-        <h1 class="text-[50px] font-semibold">
+    <section class="bg-[#EBF0FA] flex flex-col items-center gap-[10px] px-6 md:px-[100px] py-12 md:py-[50px]">
+        <h1 class="text-2x1 md:text-[50px] font-semibold text-center">
             Pilih Program Sesuai Pilihanmu
         </h1>
-        <div class="flex flex-row gap-[60px]">
-            <div class="bg-white max-w-[500px] shadow-sm font-semibold p-[20px] py-[6px] rounded-[10px]">
-                <h2 class=" bg-[#EBF0FA] text-[20px] font-semibold px-[20px] py-[6px]">PROGRAM ASRAMA (BOARDING)</h2>
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-[60px]">
+            <div class="bg-white w-full max-w-[500px] shadow-sm font-semibold p-[20px] py-[6px] rounded-[10px]">
+                <h2 class=" bg-[#EBF0FA] text-lg md:text-[20px] font-semibold px-[20px] py-[6px]">PROGRAM ASRAMA
+                    (BOARDING)</h2>
                 <div class="bg-white p-[10px] gap-[10px]">
                     <div class="flex flex-row gap-[10px]">
                         <img src="/asset/check.png" alt="">
@@ -104,7 +136,7 @@
                             Belajar & Pembinaan Sepanjang Hari
                         </p>
                     </div>
-                    <p class="bg-[#C3CFF1] text-[16px] font-medium p-[15px] rounded-[12px]">
+                    <p class="bg-[#C3CFF1] text-sm md:text-[16px] font-medium p-[15px] rounded-[12px]">
                         Program dengan sistem terarah yang menggabungkan akademik, IT, dan
                         pembentukan karakter dalam satu lingkungan.
                     </p>
@@ -122,8 +154,9 @@
                 </div>
             </div>
             <div class="flex flex-row gap-[60px]">
-                <div class="bg-white max-w-[500px] shadow-sm font-semibold p-[20px] py-[6px] rounded-[10px]">
-                    <h2 class=" bg-[#EBF0FA] text-[20px] font-semibold px-[20px] py-[6px]">PROGRAM ASRAMA (BOARDING)
+                <div class="bg-white w-full max-w-[500px] shadow-sm font-semibold p-[20px] py-[6px] rounded-[10px]">
+                    <h2 class=" bg-[#EBF0FA] text-lg md:text-[20px] font-semibold px-[20px] py-[6px]">PROGRAM ASRAMA
+                        (BOARDING)
                     </h2>
                     <div class="bg-white p-[10px] gap-[10px]">
                         <div class="flex flex-row gap-[10px]">
@@ -132,7 +165,7 @@
                                 Belajar & Pembinaan Sepanjang Hari
                             </p>
                         </div>
-                        <p class="bg-[#C3CFF1] text-[16px] font-medium p-[15px] rounded-[12px]">
+                        <p class="bg-[#C3CFF1] text-sm md:text-[16px] font-medium p-[15px] rounded-[12px]">
                             Program dengan sistem terarah yang menggabungkan akademik, IT, dan
                             pembentukan karakter dalam satu lingkungan.
                         </p>
@@ -151,11 +184,11 @@
                 </div>
             </div>
     </section>
-    <section class="bg-[#1B59DF] flex flex-col items-center gap-[50px] px-[100px] py-[50px]">
-        <h1 class="text-[50px] font-semibold text-white">
+    <section class="bg-[#1B59DF] flex flex-col items-center gap-[10px] px-6 md:px-[100px] py-12 md:py-[50px]">
+        <h1 class="text-3x1 md:text-[50px] font-semibold text-white">
             Kurikulum Kami
         </h1>
-        <div class="flex flex-row gap-[50px]">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-[50px]">
             <div class="bg-white rounded-[20px] shadow-sm max-w-[390px] flex flex-col p-[20px] gap-[20px]">
                 <img src="/asset/kurikulum 1.png" alt="">
                 <div class="flex flex-col gap-[10px]">
@@ -215,11 +248,11 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#1B59DF] flex flex-col items-center gap-[50px] px-[100px] py-[50px]">
-        <h1 class="text-[50px] font-semibold text-white">
+    <section class="bg-[#1B59DF] flex flex-col items-center gap-[10px] px-6 md:px-[100px] py-12 md:py-[50px]">
+        <h1 class="text-3x1 md:text-[50px] font-semibold text-white">
             Program Unggulan
         </h1>
-        <div class="flex flex-row gap-[50px]">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-[50px]">
             <div class="bg-white rounded-[20px] shadow-sm max-w-[390px] flex flex-col p-[20px] gap-[20px]">
                 <img src="/asset/kurikulum 1.png" alt="">
                 <div class="flex flex-col gap-[10px]">
@@ -279,29 +312,171 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col items-center gap-[50px] px-[100px] py-[50px]">
-        <div class="bg-[#1B59DF] px-[40px] pt-[20px] w-full flex flex-row justify-between items-center rounded-[40px]">
-            <div class="flex flex-col w-full gap-[20px]">
-                <h1 class="text-[50px]/[55px] font-semibold text-white">
+    <section class="flex flex-col items-center gap-[50px] px-6 md:px-[100px] py-12 md:py-[50px]">
+        <div
+            class="bg-[#1B59DF] px-6 md:px-[40px] pt-[20px] pb-10 md:pb-0 w-full flex flex-col lg:flex-row justify-between items-center rounded-[30px] md:rounded-[40px]">
+            <div class="flex flex-col w-full gap-8 md:gap-[20px] text-center lg:text-left">
+                <h1 class="text-3x1 text-[50px]/[55px] font-semibold text-white">
                     Siap Menjadi Generasi
                     Islami Berprestasi?
                 </h1>
-                <p class="text-[20px] font-medium text-white">
+                <p class="text-lg md:text-[20px] font-medium text-white">
                     Dididik dengan ilmu, iman, dan akhlak.
                 </p>
-                <div class="flex flex-row gap-[20px]">
-                    <button class="flex flex-row max-w-[250px] max-h-[50px] gap-[10px] px-[12px] py-[10px] bg-white rounded-[10px]">
-                        <p class="text-[20px] font-semibold">Daftar Sekarang</p>
+                <div class="flex flex-col sm:flex-row gap-[20px] justify-center lg:justify-start">
+                    <button
+                        class="flex flex-row max-w-[250px] max-h-[50px] gap-[10px] px-[12px] py-[10px] bg-white rounded-[10px]">
+                        <p class=" text-black text-lg md:text-[20px] font-semibold">Daftar Sekarang</p>
                         <img src="/asset/arrow.png" alt="">
                     </button>
-                    <button>
+                    <button class="text-white text-lg md:text-[20px]">
                         Hubungi Kami
                     </button>
                 </div>
             </div>
-            <img src="/asset/CTAImg.png" alt="">
+            <img src="/asset/CTAImg.png" alt="" class="w-full max-w-sm lg:max-w-none">
         </div>
     </section>
+    <section class="bg-[#E8FBFA] flex flex-col items-center gap-10 p-6 md:px-[100px] py-12 md:py-[50px]">
+        <h1 class="text-3xl md:text-[55px] font-semibold">Testimonial</h1>
+
+        <div
+            class="bg-white px-6 md:px-[50px] py-[40px] flex flex-col lg:flex-row gap-[30px] rounded-[30px] md:rounded-[40px]">
+            <div
+                class="w-full lg:max-w-[340px] bg-white shadow rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]">
+                <img src="/asset/IkonBintang.png" alt="" class="w-[59px]" />
+                <p class="text-[14px] leading-[28px]">
+                    Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+                    mandiri, dan percaya diri
+                </p>
+                <div class="flex flex-row gap-[10px] items-center">
+                    <img src="/asset/IkonProfile.png" alt="" class="object-contain" />
+                    <div>
+                        <p class="text-[18px] font-medium">wahyu</p>
+                        <p class="text-[18px]">wali siswa angkatan 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full lg:max-w-[340px] bg-white shadow rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]">
+                <img src="/asset/IkonBintang.png" alt="" class="w-[59px]" />
+                <p class="text-[14px] leading-[28px]">
+                    Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+                    mandiri, dan percaya diri
+                </p>
+                <div class="flex flex-row gap-[10px] items-center">
+                    <img src="/asset/IkonProfile.png" alt="" class="object-contain" />
+                    <div>
+                        <p class="text-[18px] font-medium">wahyu</p>
+                        <p class="text-[18px]">wali siswa angkatan 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full lg:max-w-[340px] bg-white shadow rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]">
+                <img src="/asset/IkonBintang.png" alt="" class="w-[59px]" />
+                <p class="text-[14px] leading-[28px]">
+                    Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+                    mandiri, dan percaya diri
+                </p>
+                <div class="flex flex-row gap-[10px] items-center">
+                    <img src="/asset/IkonProfile.png" alt="" class="object-contain" />
+                    <div>
+                        <p class="text-[18px] font-medium">wahyu</p>
+                        <p class="text-[18px]">wali siswa angkatan 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full lg:max-w-[340px] bg-white shadow rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]">
+                <img src="/asset/IkonBintang.png" alt="" class="w-[59px]" />
+                <p class="text-[14px] leading-[28px]">
+                    Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+                    mandiri, dan percaya diri
+                </p>
+                <div class="flex flex-row gap-[10px] items-center">
+                    <img src="/asset/IkonProfile.png" alt="" class="object-contain" />
+                    <div>
+                        <p class="text-[18px] font-medium">wahyu</p>
+                        <p class="text-[18px]">wali siswa angkatan 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="bg-[#E8FBFA] flex flex-col items-center gap-[50px] px-6 md:px-[100px] py-[20px] text-white text-center md:text-left">
+        <div class="text-3xl md:text-[50px] font-semibold">
+            FAQ
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-full max-w-6xl">
+
+            <div class="w-full max-w-[560px] flex flex-col gap-[15px] p-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+                <p class="text-sm md:text-[16px] text-[#757575]">
+                    Sekolah ini adalah tempat belajar yang menggabungkan akademik,
+                    teknologi, dan pendidikan dinyah untuk membentuk siswa yang siap
+                    masa depan.
+                </p>
+            </div>
+
+            <div class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+                <p class="text-sm md:text-[16px] text-[#757575]">
+                    Sekolah ini adalah tempat belajar yang menggabungkan akademik,
+                    teknologi, dan pendidikan dinyah untuk membentuk siswa yang siap
+                    masa depan.
+                </p>
+            </div>
+
+            <div class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+            </div>
+
+            <div class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+            </div>
+
+            <div class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+            </div>
+
+            <div class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[18px]">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+                    <img src="/asset/IkonMinus.png" alt="" class="object-contain" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#18505F] flex px-6 md:px-[100px] py-[20px] text-white text-center md:text-left">
+        <p class="w-full">© 2026 Sekolah IT. All Rights Reserved. Powered by Tim Creative</p>
+    </footer>
+</body>
+
+</html>
 </body>
 
 </html>
